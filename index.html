@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="img/logo.svg" >
     <title>Pagina Web</title>
-    <link rel="stylesheet" href="css/estilos.css"> </link>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/style.css"> 
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -160,8 +162,31 @@
             </div>
         </div>
     </footer>
+    <span class="ir-arriba icon-eject"></span>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+   
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/c622dc5d9b.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+ 
+ $('.ir-arriba').click(function(){
+     $('body, html').animate({
+         scrollTop: '0px'
+     }, 300);
+ });
+
+ $(window).scroll(function(){
+     if( $(this).scrollTop() > 0 ){
+         $('.ir-arriba').slideDown(300);
+     } else {
+         $('.ir-arriba').slideUp(300);
+     }
+ });
+
+});
+    </script>
 </body>
 </html>
