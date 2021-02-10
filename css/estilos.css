@@ -141,8 +141,16 @@ nav {
   border-radius: 5px;
   box-shadow: 0 8px 32px rgb(31, 222, 130, 0.46);
 }
+.contenido-header img{
+  border-radius: 4px;
+  border-image:stretch;
+  color: #1fde82;
+  box-shadow: khaki;
+  box-sizing: content-box;
+}
 .titulo {
   font-size: 50px;
+  text-align: center;
 }
 /*about us*/
 .about-us {
@@ -340,6 +348,12 @@ footer {
   font-weight: 300;
   transition: color 0.3s ease-in-out;
   margin-bottom: 10px;
+}
+.partFooter li{
+  margin: 10px;
+  margin-bottom: 10px;
+  /* text-align: left; */
+  text-align: justify;
 }
 .partFooter a:hover {
   color: #1fde82;
